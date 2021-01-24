@@ -7,6 +7,24 @@ namespace LinkedListProj
     {
         static void Main(string[] args)
         {
+            var circularList = new CircularLinkedList<int>();
+            circularList.Add(1);
+            circularList.Add(2);
+            circularList.Add(3);
+            circularList.Add(4);
+            circularList.Add(5);
+            circularList.Add(6);
+            foreach(var item in circularList)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+            circularList.Delete(4);
+            foreach (var item in circularList)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("=-=-=-=-=-=-=");
             var list = new Model.LinkedList<int>();
             list.Add(1);
             list.Add(2);
